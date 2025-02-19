@@ -1,4 +1,4 @@
-package pub;
+package fr.usmb.pub;
 
 import java.util.Vector; 
 import java.util.Enumeration;
