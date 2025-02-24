@@ -14,17 +14,15 @@ For now, it is more inclined towards setting up the environment than the tests t
 ## Project
 - [X] Compilation with Maven
 - [X] Test with JUnit and Jacoco
+- [X] SonarQube
 
 Now that the test environment works. We have to actually test and correct the code.
 
 ### ToDo
-- [ ] SonarQube
 - [ ] Test and refactor
 
 
 ### Backlog
-- [ ] Linter
-- [ ] SonarQube
 - [ ] Jenkins
 - [ ] Site
 - [ ] Deployment artifact
