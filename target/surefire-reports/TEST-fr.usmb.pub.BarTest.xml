@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.usmb.pub.BarTest" time="0.007" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.usmb.pub.BarTest" time="0.008" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,10 +12,10 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/franciellecardoso/Documents/GitHub/VirtualPub/target/surefire/surefirebooter16017798967890473241.jar /Users/franciellecardoso/Documents/GitHub/VirtualPub/target/surefire 2025-02-26T10-19-33_776-jvmRun1 surefire1246301863527893282tmp surefire_01417828251609276636tmp"/>
+    <property name="sun.java.command" value="/Users/franciellecardoso/Documents/GitHub/VirtualPub/target/surefire/surefirebooter6661419682538145317.jar /Users/franciellecardoso/Documents/GitHub/VirtualPub/target/surefire 2025-02-26T10-37-27_228-jvmRun1 surefire7404341553853130539tmp surefire_012048281097258525386tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="fr.usmb.pub.BarTest#AjouterBoissonChaude"/>
+    <property name="test" value="fr.usmb.pub.BarTest#RechercerInsensible"/>
     <property name="surefire.test.class.path" value="/Users/franciellecardoso/Documents/GitHub/VirtualPub/target/test-classes:/Users/franciellecardoso/Documents/GitHub/VirtualPub/target/classes:/Users/franciellecardoso/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.2.0/junit-jupiter-engine-5.2.0.jar:/Users/franciellecardoso/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/franciellecardoso/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/Users/franciellecardoso/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/Users/franciellecardoso/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar:/Users/franciellecardoso/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.2.0/junit-jupiter-api-5.2.0.jar:/Users/franciellecardoso/.m2/repository/org/junit/platform/junit-platform-runner/1.2.0/junit-platform-runner-1.2.0.jar:/Users/franciellecardoso/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/Users/franciellecardoso/.m2/repository/org/junit/platform/junit-platform-suite-api/1.2.0/junit-platform-suite-api-1.2.0.jar:/Users/franciellecardoso/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/franciellecardoso/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:src/test/java/:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/franciellecardoso"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/franciellecardoso/Documents/GitHub/VirtualPub/target/surefire/surefirebooter16017798967890473241.jar"/>
+    <property name="surefire.real.class.path" value="/Users/franciellecardoso/Documents/GitHub/VirtualPub/target/surefire/surefirebooter6661419682538145317.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -59,13 +59,12 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="AjouterBoissonChaude" classname="fr.usmb.pub.BarTest" time="0.005">
-    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;enum Identifier&quot; to complete EnumHeader&#10;	Syntax error, insert &quot;EnumBody&quot; to complete EnumDeclaration&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
-Unresolved compilation problems: 
-	Syntax error, insert "enum Identifier" to complete EnumHeader
-	Syntax error, insert "EnumBody" to complete EnumDeclaration
+  <testcase name="RechercerInsensible" classname="fr.usmb.pub.BarTest" time="0.006">
+    <error message="Unresolved compilation problem: &#10;	Coca cannot be resolved to a variable&#10;" type="java.lang.Error">java.lang.Error: 
+Unresolved compilation problem: 
+	Coca cannot be resolved to a variable
 
-	at fr.usmb.pub.BarTest.<init>(BarTest.java:56)
-]]></error>
+	at fr.usmb.pub.BarTest.RechercerInsensible(BarTest.java:59)
+</error>
   </testcase>
 </testsuite>

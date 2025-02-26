@@ -56,10 +56,10 @@ class BarTest {
     @Test
     void RechercerInsensible(){
         bar.add(coca);
-        Boisson served = bar.serv("Coca");
-        Assertions.assertFalse(bar.boissonFroide.contains(coca), "A bebida 'Coca' não foi removida da lista.");
-        Assertions.assertNotNull(served, "A bebida servida não deveria ser nula.");
-        Assertions.assertEquals(coca, served, "A bebida servida não é a mesma que a bebida adicionada.");
+        Boisson served = bar.serv(Coca);
+        Assertions.assertFalse(bar.boissonFroide.contains(coca), "Coca was not removed from the list");
+        Assertions.assertNotNull(served);
+        Assertions.assertEquals(coca, served);
 }
 
 }
