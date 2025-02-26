@@ -43,10 +43,17 @@ class BoissonTest {
     }
 
     @Test
-    void correctDrinkNameToString(){
+    void correctAlcoholicDrinkNameToString(){
         b = new Boisson("Brandy", 5.0f);
         Assertions.assertTrue(b.toString().contains("Brandy"));
         Assertions.assertTrue(b.toString().contains("(l'abus d'alcool est dangereux pour la sante)"));
+    }
+
+    @Test
+    void correctNonAlcoholicDrinkNameToString(){
+        b = new Boisson("Water");
+        Assertions.assertTrue(b.toString().contains("Water"));
+        Assertions.assertFalse(b.toString().contains("(l'abus d'alcool est dangereux pour la sante)"));
     }
 
 }
