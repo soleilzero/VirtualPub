@@ -62,7 +62,7 @@ public class Pub {
 		System.out.println(pub.cave);
 		System.out.println(pub.bar);
 		
-		System.out.println("Boisson servie : " + pub.bar.serv("cafe"));
+		//System.out.println("Boisson servie : " + pub.bar.serv("cafe"));
 		System.out.println(pub.bar);
 	}
 
