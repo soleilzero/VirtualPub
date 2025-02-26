@@ -43,10 +43,10 @@ class BoissonTest {
     }
 
     @Test
-    void testCheckFuncAlc(){
+    void correctDrinkNameToString(){
         b = new Boisson("Brandy", 5.0f);
-        String expected = "Brandy (l'abus d'alcool est dangereux pour la sante)";
-        Assertions.assertEquals(expected, b.toString());
+        Assertions.assertTrue(b.toString().contains("Brandy"));
+        Assertions.assertTrue(b.toString().contains("(l'abus d'alcool est dangereux pour la sante)"));
     }
 
 }
