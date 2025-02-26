@@ -27,7 +27,7 @@ class BoissonTest {
     }
 
     @Test
-    void DrinkNegativeDegreeInitialization(){
+    void NegativeAlcoholDegreeIsNotAllowed(){
         try {
             b = new Boisson("Not whisky", -10.0f);
             Assertions.fail("Exception should be thrown for negative alcohol degree");
@@ -40,6 +40,16 @@ class BoissonTest {
     void ZeroAlcoholDegreeIsNonAlcoholic(){
         b = new Boisson("Water", 0f);
         Assertions.assertFalse(b.alcoolise);
+    }
+
+    @Test
+    void AlcoholDegreeOver100IsNotAllowed(){
+        try {
+            b = new Boisson("Potion", 101f);
+            Assertions.fail("Exception should be thrown for negative alcohol degree");
+        } catch (IllegalArgumentException e) {
+            Assertions.assertTrue(e.getMessage().contains("degree"));
+        }
     }
 
     @Test

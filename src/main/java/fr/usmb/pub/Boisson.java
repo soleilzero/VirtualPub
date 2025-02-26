@@ -28,7 +28,7 @@ public class Boisson {
 		this.nom = nom;
 		this.degre = degre;
 		this.alcoolise = new Boolean(this.degre > 0);
-		if (this.degre < 0){
+		if (this.degre < 0 || this.degre > 100){
 			throw new IllegalArgumentException("Alcohol degree must be a positive number");
 		}
 	}
