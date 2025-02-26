@@ -14,12 +14,16 @@ class BoissonTest {
     }
 
     @Test
-    void AlocoholicDrinkInitialisation(){
+    void AlocoholicDrinkDegreeAndNameInitialisation(){
         b = new Boisson("Whisky", 10.0f);
         Assertions.assertEquals("Whisky", b.nom);
         //Assertions.assertEquals(10.0f, b.degre);
-        Assertions.assertTrue(b.alcoolise);
+    }
 
+    @Test
+    void AlocoholicDrinkIsAlcoholic(){
+        b = new Boisson("Whisky", 10.0f);
+        Assertions.assertTrue(b.alcoolise);
     }
 
     @Test
