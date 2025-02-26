@@ -2,23 +2,19 @@ package fr.usmb.pub;
 
 import org.junit.jupiter.api.*;
 
+import java.util.Optional;
+
 class BoissonTest {
     Boisson b;
 
     @Test
-    void exempleTest(){
-        b = new Boisson("coca");
-        Assertions.assertEquals("coca", b.nom);
-    }
-
-    @Test
-    void testNewDrinkON(){
+    void DrinkNameInitialization(){
         b = new Boisson("Water");
         Assertions.assertEquals("Water", b.nom);
     }
 
     @Test
-    void testNewDrinkNameDegree(){
+    void AlocoholicDrinkInitialisation(){
         b = new Boisson("Whisky", 10.0f);
         Assertions.assertEquals("Whisky", b.nom);
         //Assertions.assertEquals(10.0f, b.degre);
@@ -27,7 +23,7 @@ class BoissonTest {
     }
 
     @Test
-    void testNewDrinkNegativeDegree(){
+    void DrinkNegativeDegreeInitialization(){
         try {
             b = new Boisson("Not whisky", -10.0f);
             Assertions.fail("Exception should be thrown for negative alcohol degree");
