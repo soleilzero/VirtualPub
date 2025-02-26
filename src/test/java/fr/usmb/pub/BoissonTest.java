@@ -37,6 +37,12 @@ class BoissonTest {
     }
 
     @Test
+    void ZeroAlcoholDegreeIsNonAlcoholic(){
+        b = new Boisson("Water", 0f);
+        Assertions.assertFalse(b.alcoolise);
+    }
+
+    @Test
     void testCheckFuncAlc(){
         b = new Boisson("Brandy", 5.0f);
         String expected = "Brandy (l'abus d'alcool est dangereux pour la sante)";

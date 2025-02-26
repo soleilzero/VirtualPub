@@ -27,7 +27,7 @@ public class Boisson {
 	public Boisson(String nom, Float degre){
 		this.nom = nom;
 		this.degre = degre;
-		this.alcoolise = new Boolean(true);
+		this.alcoolise = new Boolean(this.degre > 0);
 		if (this.degre < 0){
 			throw new IllegalArgumentException("Alcohol degree must be a positive number");
 		}
