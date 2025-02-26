@@ -4,18 +4,6 @@ import org.junit.jupiter.api.*;
 
 class BoissonTest {
     Boisson b;
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
-    }
-
-    @Test
-    void testToString() {
-        fail("Not yet implemeted");
-    }
 
     @Test
     void exempleTest(){
