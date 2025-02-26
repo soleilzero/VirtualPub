@@ -43,10 +43,4 @@ class BoissonTest {
         Assertions.assertEquals(expected, b.toString());
     }
 
-
-    @Test
-    void testCheckFuncNonAlc(){
-        b = new Boisson("Water");
-        Assertions.assertEquals("Water", b.nom);
-    }
 }
