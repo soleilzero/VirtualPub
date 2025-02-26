@@ -47,6 +47,7 @@ public class Bar {
 		}
 	}
 	
+	
 	/**
 	 * @param command
 	 * @return
