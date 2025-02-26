@@ -17,11 +17,11 @@ class BoissonTest {
     void AlocoholicDrinkDegreeAndNameInitialisation(){
         b = new Boisson("Whisky", 10.0f);
         Assertions.assertEquals("Whisky", b.nom);
-        //Assertions.assertEquals(10.0f, b.degre);
+        Assertions.assertTrue(10.0f == b.degre);
     }
 
     @Test
-    void AlocoholicDrinkIsAlcoholic(){
+    void AlcoholicDrinkIsAlcoholic(){
         b = new Boisson("Whisky", 10.0f);
         Assertions.assertTrue(b.alcoolise);
     }
