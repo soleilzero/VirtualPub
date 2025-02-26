@@ -11,13 +11,17 @@ public class Boisson {
 	public Float degre;
 	public Float volume; // volume de la bouteille, cennette, fut ...
 	public Float prix;
+	//public Boolean chaude;
+
 	
 	/**
 	 * @param nom
+	 * 
 	 */
 	public Boisson(String nom){
 		this.nom = nom;
-		this.alcoolise = new Boolean(false);
+		this.alcoolise = Boolean.FALSE;
+		
 	}
 	
 	/**
@@ -27,12 +31,13 @@ public class Boisson {
 	public Boisson(String nom, Float degre){
 		this.nom = nom;
 		this.degre = degre;
-		this.alcoolise = new Boolean(true);
+		this.alcoolise = Boolean.TRUE;
 	}
 	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
+	@Override
 	public String toString(){
 		String retour = this.nom;
 		if(this.alcoolise){

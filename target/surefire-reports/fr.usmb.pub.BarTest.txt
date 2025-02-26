@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: fr.usmb.pub.BarTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! - in fr.usmb.pub.BarTest
+AjouterBoissonChaude  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "enum Identifier" to complete EnumHeader
+	Syntax error, insert "EnumBody" to complete EnumDeclaration
+
+	at fr.usmb.pub.BarTest.<init>(BarTest.java:56)
+

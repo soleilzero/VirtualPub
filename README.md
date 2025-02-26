@@ -23,8 +23,6 @@ Now that the test environment works. We have to actually test and correct the co
 
 
 ### Backlog
-- [ ] Linter
-- [ ] SonarQube
-- [ ] Jenkins
+- [ ] Jenkins 
 - [ ] Site
 - [ ] Deployment artifact
